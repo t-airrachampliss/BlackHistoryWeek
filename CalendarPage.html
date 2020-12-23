@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Calendar | Black American History</title>
+</head>
+<style>
+/* Header */
+.header {
+    color: black;
+    font-size: 30px;
+    font-family: Century Gothic;
+    padding: 1px;
+    text-align: center;
+}
+
+/* the grid */
+.day-names,
+.day-nums {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.day-nums hdr:first-child {
+    grid-column: 3;
+}
+
+.month {
+    padding: 20px;
+    background: lightpink;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.month hdr {
+    background: var(--color);
+	font: 800 50px "Montserrat", sans-serif;
+    text-align: center;
+	text-transform: uppercase;
+    letter-spacing: 4px;
+	color: rgba(255, 255, 255, 0.774);
+	text-shadow: 0 0px 4px rgba(255, 0, 0, 0.1);
+}
+
+.day-names {
+    padding: 10px;
+    background-color: lightskyblue;
+    font-family: -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, "Helvetica Neue", sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.day-names hdr {
+    display: inline-block;
+    color: black;
+}
+
+.day-nums {
+    padding: 10px;
+    background: lavender;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.day-nums hdr {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 15px;
+
+}
+
+.day-nums hdr:hover {
+    border: 3px solid lightsalmon;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-bottom: 0px;
+}
+
+
+
+
+    /* box properties */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(17, 16, 16);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+}
+
+/* text properties */
+.sidenav a {
+    padding: 10px 10px 20px 10px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Courier;
+    font-weight: 540;
+    color: white;
+    display: block;
+    transition: 0.4s;
+}
+
+.sidenav a:hover {
+    color: #f1d63c;
+}
+
+/* close button */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 40px;
+    transition: 0.4s;
+}
+
+/* menu button properties */
+.sideNavLeft {
+    position: absolute;
+    left: 50px;
+    top: 40px;
+}
+
+</style>
+
+</body>
+<!--header space-->
+<div class="header">
+    <div class="sideNavLeft">
+        <span style="font-size: 40px; cursor: pointer" onclick="openNav()">&#9776;</span>
+    </div>
+        <h1>CALENDAR</h1>
+</div>
+
+<!--navigation menu-->
+<div id="sideNav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="HomePage.html">HOME</a>
+    <a href="AboutPage.html">ABOUT</a>
+    <a href="CalendarPage.html">CALENDAR</a>
+    <a href="ReferencePage.html">REFERENCES</a>
+
+</div>
+
+<div class="month">
+    <hdr>September</hdr>
+</div>
+
+<div class="day-names">
+    <!--Days of the week-->
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wen</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+</div>
+
+    <div class="day-nums">
+        <hdr>1</hdr>
+        <hdr>2</hdr>
+        <hdr>3</hdr>
+        <hdr>4</hdr>
+        <hdr>5</hdr>
+        <hdr>6</hdr>
+        <hdr>7</hdr>
+        <hdr>8</hdr>
+        <hdr>9</hdr>
+        <hdr>10</hdr>
+        <hdr>11</hdr>
+        <hdr>12</hdr>
+        <hdr>13</hdr>
+        <hdr>14</hdr>
+        <hdr>15</hdr>
+        <hdr>16</hdr>
+        <hdr>17</hdr>
+        <hdr>18</hdr>
+        <hdr>19</hdr>
+        <hdr>20</hdr>
+        <hdr>21</hdr>
+        <hdr>22</hdr>
+        <hdr>23</hdr>
+        <hdr>24</hdr>
+        <hdr>25</hdr>
+        <hdr>26</hdr>
+        <hdr>27</hdr>
+        <hdr>28</hdr>
+        <hdr>29</hdr>
+        <hdr>30</hdr>
+        
+</div>
+
+
+<!--navigation menu functions-->
+<script>
+    function openNav(){
+        document.getElementById("sideNav").style.width = "250px";
+    }
+    
+    function closeNav(){
+        document.getElementById("sideNav").style.width = "0px";
+    }
+</script>
+
+</body>
+
+</html>

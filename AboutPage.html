@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About | Black American History</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+</head>
+<style>
+/* Body */
+body {
+    margin: 0;
+    font-family: 'Karma';
+}
+
+/* Header */
+.header {
+    color: black;
+    font-size: 35px;
+    font-family: Century Gothic;
+    padding: 1px;
+    text-align: center;
+}
+
+/* box properties */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(17, 16, 16);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+}
+
+/* text properties */
+.sidenav a {
+    padding: 10px 10px 20px 10px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Courier;
+    font-weight: 540;
+    color: white;
+    display: block;
+    transition: 0.4s;
+}
+
+.sidenav a:hover {
+    color: #f1d63c;
+}
+
+/* close button */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 40px;
+    transition: 0.4s;
+}
+
+/* menu button properties */
+.sideNavLeft {
+    position: absolute;
+    left: 50px;
+    top: 40px;
+}
+
+/* info properties */
+.setup {
+    margin: 10px;
+}
+
+</style>
+
+<body>
+<!--header space-->
+<div class="header">
+    <div class="sideNavLeft">
+        <span style="font-size: 40px; cursor: pointer" onclick="openNav()">&#9776;</span>
+    </div>
+        <h1>ABOUT</h1>
+</div>
+
+<!--navigation menu-->
+<div id="sideNav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="HomePage.html">HOME</a>
+    <a href="AboutPage.html">ABOUT</a>
+    <a href="CalendarPage.html">CALENDAR</a>
+    <a href="ReferencePage.html">REFERENCES</a>
+</div>
+
+<!--Info-->
+<div class="setup">
+    <h1>The History Behind</h1>
+    <p> What is "This day in Black American History"? The idea behind this website was inspired by the recent Black Lives Matter protests that were incited by the murders of Ahmaud Arbery, Breonna Taylor and George Floyd. While the movement was successful in at least increasing awareness worldwide to all types of people of the unjust and unfair treatment of African/Black American people in the United States,
+        it was also made increasing clear that everyone, even black people, could learn more about our history in this country. Since I do not see myself except from the massive group people uneducated on Black History, I decided to do my own research. Before I could even begin, however, I became increasingly overwhelemed;
+        trying to choose between the numerous topics and events in black history to focus on and study can be extremly daunting, and I experienced that same feeling when confronted with such a powerful mission.
+        
+        <br>
+        <br>
+        Over the days that followed, I began thinking about how I could learn about my culture and heritage while helping others who were also interested in educating themselves.
+        With this website, I can educate myself on a large range of different subjects that include but are not limited to: Black Music, Black Literature, Black Inventions (Tech), Black Inventions (Non-Tech), the Civil Rights Movement, Slavery and Black Politics. And in return, I can present information in smaller, more manageable doses daily and hold myself accoutable by taking on the responsibility of educating others.
+        
+        <br>
+        <br>
+        With that being said, Welcome to "Today in Black American History" and I hope my efforts are effective in enlightening you!
+    </p>
+</div>
+
+
+
+<!--navigation menu functions-->
+<script>
+    function openNav(){
+        document.getElementById("sideNav").style.width = "250px";
+    }
+    
+    function closeNav(){
+        document.getElementById("sideNav").style.width = "0px";
+    }
+</script>
+
+</body>
+
+</html>

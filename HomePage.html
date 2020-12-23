@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home | Black American History</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+
+/* Body */
+body {
+    margin: 0;
+}
+
+/* spacing for text */
+.space { 
+    margin: 10px;
+}
+
+/* Header */
+.header {
+    padding: 130px;
+    text-align: center;
+    /** art by Adriana Bellet, Washington Post **/
+    background-image: url("temp_web_image.jpg");
+    background-size: 450px 350px;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    font-size: 35px;
+    font-family: Century Gothic;
+}
+
+/* box properties */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(17, 16, 16);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+}
+
+/* text properties */
+.sidenav a {
+    padding: 10px 10px 20px 10px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Courier;
+    font-weight: 540;
+    color: white;
+    display: block;
+    transition: 0.4s;
+}
+
+.sidenav a:hover {
+    color: #f1d63c;
+}
+
+/* close button */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 40px;
+    transition: 0.4s;
+}
+
+/* menu button properties */
+.sideNavLeft {
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    
+}
+
+/* buttons on Home Page */
+.homeButton {
+    background-color: black;
+    border: none;
+    color: white;
+    font-family: Cambria;
+    padding: 20px 35px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 230px;
+}
+
+.homeButton:hover {
+    background-color: white;
+    color: black;
+    border: solid black;
+}
+
+.event {
+    font-family: 'Karma';
+}
+
+.previous {
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+
+    </style>    
+</head>
+
+<body>
+
+<!--header text and navigation bar-->
+<div class="header">
+    <div class="sideNavLeft">
+        <span style="font-size: 40px; cursor: pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    <h1>Today in Black American History</h1>
+    <h3 style="font-size: 28px; font-weight: 100;">EDUCATE YOURSELF BY THE DAY.</h3>
+</div>
+
+<!--navigation menu-->
+<div id="sideNav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="HomePage.html">HOME</a>
+    <a href="AboutPage.html">ABOUT</a>
+    <a href="CalendarPage.html">CALENDAR</a>
+    <a href="ReferencePage.html">REFERENCES</a>
+
+</div>
+
+<!--home page buttons-->
+<div style="text-align: center">
+    <button class="homeButton"; onclick="document.location='HomePage.html'">Home</button>
+    <button class="homeButton"; onclick="document.location='AboutPage.html'">About</button>
+    <button class="homeButton"; onclick="document.location='CalendarPage.html'">Calendar</button>
+    <button class="homeButton"; onclick="document.location='ReferencePage.html'">References</button>
+</div>
+
+<!--date-->
+<div class="space">
+    <h2 style="font-family: 'Karma'; font-weight: 570; font-size: 45px;">
+    July 13th, 2020
+    </h2>
+</div>
+
+<!--history information-->
+<div class="event space">
+    <h2 style="font-size: 35px;">Title of event.</h2>
+    <p style="padding-bottom: 200px; font-size: 18px;">
+        <img src="temp_info_image.jpg" style= "float:left; width:170px; height:170px; margin-right:15px;">
+        (Information Coming Soon!) The quick brown fox jumps over the lazy dog.
+        The quick brown fox jumps over the lazy dog.
+        The quick brown fox jumps over the lazy dog.
+        The quick brown fox jumps over the lazy dog.
+        The quick brown fox jumps over the lazy dog.
+        The quick brown fox jumps over the lazy dog.
+        The quick brown fox jumps over the lazy dog.
+        The quick brown fox jumps over the lazy dog.
+        The quick brown fox jumps over the lazy dog.
+    </p>
+</div>
+
+<!--calendar view-->
+<div>
+    <img src="psalm465.jpg" style="width:500px; height:500px; margin-left: auto; margin-right: auto; display: block;">
+</div>
+
+<!--previous years bar-->
+<div class="previous">
+    <h2>This Day Previously: (Coming Soon)</h2>
+    <p> Black American History is extremly extensive and there are more than one event per day in a year.
+        Because of this, most if not all days will have a new event from the previous year.
+        Because this is my first year, this section is blank.
+        But, hopefully this tab will be more relevant and useful in the new year (2021).
+    </p>
+</div>
+
+<!--navigation menu functions-->
+<script>
+function openNav(){
+    document.getElementById("sideNav").style.width = "250px";
+}
+
+function closeNav(){
+    document.getElementById("sideNav").style.width = "0px";
+}
+
+</script>
+</body>
+
+</html>
